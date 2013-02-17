@@ -1,4 +1,10 @@
 RlsSandbox::Application.routes.draw do
+  get "static_pages/Home"
+
+  get "static_pages/Events"
+
+  get "static_pages/About"
+
   resources :microposts
 
 
