@@ -1,10 +1,12 @@
 RlsSandbox::Application.routes.draw do
-  get "static_pages/Home"
-
-  get "static_pages/Events"
-
-  get "static_pages/About"
-
+	root to: 'static_pages#Home'
+  #get "static_pages/Home"
+	#match '/Home', to: 'static_pages#Home'
+  #get "static_pages/Events"
+	match '/Events', to: 'static_pages#Events'
+  #get "static_pages/About"
+	match '/About', to: 'static_pages#About'
+	
   resources :microposts
 
 
